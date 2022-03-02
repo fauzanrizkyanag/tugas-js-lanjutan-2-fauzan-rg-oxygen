@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function segiEmpat(panjang, lebar) {
+        this.panjang = panjang;
+        this.lebar = lebar;
+        this.keliling = function () {
+            return 2 * (this.panjang + this.lebar);
+        }
+        this.luas = function () {
+            return this.panjang * this.lebar;
+        }
+    }
+    let s = new segiEmpat(4, 3);
+    console.log("Keliling segi empat = " + s.keliling());
+    console.log("Luas segi empat = " + s.luas());
+</script>
+</html>
